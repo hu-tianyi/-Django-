@@ -2,7 +2,7 @@
 
 ##### My blog is still under construction!
 ##### Plan to finish it in the winter holiday(2018)
-Visit my blog at [www.hutianyi.tech](www.hutianyi.tech)
+Visit my blog at [www.hutianyi.tech](http://www.hutianyi.tech)
 ## Features
 - Based on Django
 - Using AliYun ECS
