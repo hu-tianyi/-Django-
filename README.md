@@ -1,5 +1,7 @@
 # MyBlog
 
+
+
 ##### My blog is still under construction!
 ##### Plan to finish it in the winter holiday(2018)
 You can visit it at [www.hutianyi.com](http://www.hutianyi.tech?_blank)
@@ -19,4 +21,15 @@ You can visit it at [www.hutianyi.com](http://www.hutianyi.tech?_blank)
 #### v0.0.0 (dd/mm/yy hh:mm)
 + blah~blah~
 + blah~blah~blah
+
+
+
+<script type="text/javascript">  
+    $(document).ready(function() {  
+        //为超链接加上target='_blank'属性  
+        $('a[href^="http"]').each(function() {  
+            $(this).attr('target', '_blank');  
+        });  
+    });  
+</script>  
  
