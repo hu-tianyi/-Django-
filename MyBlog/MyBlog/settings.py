@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap_admin',  # beautify the administration page
     'django.contrib.admin', # the back-stage management
     'django.contrib.auth',
     'django.contrib.contenttypes',
