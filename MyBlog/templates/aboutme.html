@@ -3,6 +3,8 @@
 
 {% block content %}
 <div class="posts">
-        <p> About Me 正在建设中 </p>
+        <p>
+            {{ post.content|custom_markdown }}
+        </p>
 </div><!-- /.blog-post -->
 {% endblock %}
