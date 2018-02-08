@@ -7,6 +7,7 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 + python3.5
 + django 1.11.10
 + bootstrap_admin ```pip3 install bootstrap-admin```
+  + markdown ```pip3 install markdown```
 
 ## Features
 
