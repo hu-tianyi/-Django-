@@ -14,15 +14,16 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - Using AliYun ECS(Ubuntu 16.04 LTS)
 
 ## Todo List
-- [ ] 构思博客结构
-- [ ] 搭建后台
-- [ ] 构思博客布局
-- [ ] 搭建前端
 - [ ] 部署服务器
-- [ ] 评论系统
+- [ ] 搜索系统
 
 ## Done
 - [x] 域名审核	
+- [x] 评论系统
+- [x] 构思博客结构
+- [x] 搭建后台
+- [x] 构思博客布局
+- [x] 搭建前端
 
 ## Change Log
 #### v0.0.0 (dd/mm/yy hh:mm)
