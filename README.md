@@ -21,7 +21,7 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - [ ] 部署服务器
 
 ## Done
-- [x] 域名审核
+- [x] 域名审核	2018/1/29
 
 ## Change Log
 #### v0.0.0 (dd/mm/yy hh:mm)
