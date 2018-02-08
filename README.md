@@ -15,7 +15,7 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 
 ## Todo List
 - [ ] 部署服务器
-- [ ] 搜索系统
+- [ ] 分页
 
 ## Done
 - [x] 域名审核	
@@ -24,6 +24,7 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - [x] 搭建后台
 - [x] 构思博客布局
 - [x] 搭建前端
+- [x] 搜索系统
 
 ## Change Log
 #### v0.0.0 (dd/mm/yy hh:mm)
