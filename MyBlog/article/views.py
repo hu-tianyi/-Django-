@@ -22,6 +22,8 @@ def home(request):
 def detail(request, id):
     try:
         post = Article.objects.get(id=str(id))
+        post.page_views += 1
+        post.save()
     except Article.DoesNotExist:
         raise Http404
     return render(request, 'post.html', {'post' : post})

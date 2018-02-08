@@ -7,10 +7,11 @@ class Article(models.Model):
     category = models.CharField(max_length = 50, blank = True)  # the label of the blog
     date_time = models.DateTimeField(auto_now_add = True)  # the publish time of the blog
     content = models.TextField(blank = True, null = True)  # the content of the blog
+    page_views = models.IntegerField(default = 0)
 
     def get_absolute_url(self):
         path = reverse('detail', kwargs={'id':self.id})
-        return "http://127.0.0.1:8002%s" % path
+        return "http://www.hutianyi.tech%s" % path
 
     def __str__(self):  #python3 use str
         return self.title
