@@ -31,9 +31,10 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - [x] 部署开发服务器
 
 ## Change Log
-#### v0.0.0 (dd/mm/yy hh:mm)
-+ blah~blah~
-+ blah~blah~blah
+#### v0.0.1 (09/02/2018)
++ 基本功能已经实现
++ 搭载在开发服务器上
++ 文章内容待完善
 
 
 

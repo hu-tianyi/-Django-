@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from article import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = urlpatterns = [
     # Examples:
@@ -31,4 +33,6 @@ urlpatterns = urlpatterns = [
     url(r'^tag(?P<tag>\w+)/$', views.search_tag, name = 'search_tag'),
     url(r'^search/$', views.blog_search, name = 'search'),
     url(r'^feed/$', views.RSSFeed(), name = "RSS"),
-]
+
+]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
+
