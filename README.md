@@ -15,8 +15,7 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - Using AliYun ECS(Ubuntu 16.04 LTS)
 
 ## Todo List
-- [ ] 部署服务器
-- [ ] 分页
+- [ ] 部署生产服务器
 
 ## Done
 - [x] 域名审核	
@@ -26,6 +25,10 @@ You can visit it at <a href="http://www.hutianyi.tech" target="_blank">www.hutia
 - [x] 构思博客布局
 - [x] 搭建前端
 - [x] 搜索系统
+- [x] 自动解析Markdown
+- [x] 代码高亮
+- [x] 分页
+- [x] 部署开发服务器
 
 ## Change Log
 #### v0.0.0 (dd/mm/yy hh:mm)

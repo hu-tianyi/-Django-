@@ -25,7 +25,11 @@ SECRET_KEY = '$v%%b)x+gy&xxkj8+clw4u%m$1fd7csh9hifx23pgvg@%guz%4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.hutianyi.tech',
+    '127.0.0.1',
+
+]
 
 
 # Application definition
