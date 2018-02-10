@@ -23,11 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '$v%%b)x+gy&xxkj8+clw4u%m$1fd7csh9hifx23pgvg@%guz%4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'www.hutianyi.tech',
     '127.0.0.1',
+    '120.79.17.109',
 
 ]
 

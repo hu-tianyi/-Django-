@@ -3,9 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hutainyi.tech</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
@@ -21,59 +20,65 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--font-awesome加载-->
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
 <body>
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="header">
-            <h1 class="brand-title"><a href="{% url "home" %}">象牙塔塔主</a></h1>
-            <h2 class="brand-tagline">Master of Ivory Tower</h2>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="{% url 'archives' %}">Archive</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="https://www.github.com/hu-tianyi">Github</a>
-                    </li>
-                    <li>
-                        <div align="center">
-                            <form class="pure-form" action="/search/" method="get">
-                            <input class="pure-input-3-3" type="text" name="s" placeholder="search">
-                            </form>
-                        </div>
-                    </li>
-                    <li class="nav-item">
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+            <div class="header">
+                <h1 class="brand-title"><a href="{% url "home" %}">象牙塔塔主</a></h1>
+                <h2 class="brand-tagline">Master of Ivory Tower</h2>
+                    <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="button-success pure-button" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button-success pure-button" href="{% url 'archives' %}">Archive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="pure-button" href="https://www.github.com/hu-tianyi">Github</a>
+                        </li>
+                        <li>
+                            <div align="center">
+                                <form class="pure-form" action="/search/" method="get">
+                                    <input class="pure-input-3-3" type="text" name="s" placeholder="search">
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item">
                             <a class="button-success pure-button" href="mailto:asktianyi@outlook.com">E-mail</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="{% url 'about_me' %}">About Me</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                            <a class="button-success pure-button" href="{% url 'about_me' %}">About Me</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="button-success pure-button" href="{% url 'RSS' %}">RSS</a>  
-                    </li>
-                </ul>
-            </nav>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
+            {% block pagetitle %}
+            {% endblock %}
+        </div>
+        <div>
             {% block content %}
             {% endblock %}
-            <div class="footer">
-                <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                    <ul>
-                        <li><a href="{% url 'about_me' %}">About Me</a></li>
-                        <li><a href="http://github.com/hu-tianyi/">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
+        </div>
+    </div>    
+            
+    <div class="footer">
+        <div class="pure-menu pure-menu-horizontal pure-menu-open">
+            <ul>
+                <li><a href="{% url 'about_me' %}">About Me</a></li>
+                <li><a href="http://github.com/hu-tianyi/">GitHub</a></li>
+            </ul>
         </div>
     </div>
-</div>
-
+   
 </body>
 </html>
