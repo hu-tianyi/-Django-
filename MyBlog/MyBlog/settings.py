@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'www.hutianyi.tech',
     '127.0.0.1',
     '120.79.17.109',
+    'www.baidu.com',
 
 ]
 
