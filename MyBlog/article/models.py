@@ -4,7 +4,8 @@ from django.core.urlresolvers import reverse
 
 class Article(models.Model):
     title = models.CharField(max_length = 100)  # the title of the blog
-    category = models.CharField(max_length = 50, blank = True)  # the label of the blog
+    category = models.CharField(max_length = 50, blank = True)  # the main label of the blog
+    tag = models.CharField(max_length = 50, blank = True)  # the sub label of the blog
     date_time = models.DateTimeField(auto_now_add = True)  # the publish time of the blog
     content = models.TextField(blank = True, null = True)  # the content of the blog
     page_views = models.IntegerField(default = 0)

@@ -5,17 +5,15 @@
     {% if error %}
         <h2 class="post-title">没有相关文章题目</a></h2>
     {% else %}
-    {%for post in post_list%}
-        <p>{{ post.category }}</p>
-    {% endfor %}
     {% for post in post_list %}
         <section class="post">
             <header class="post-header">
                 <h2 class="post-title"><a href="{% url 'detail' id=post.id %}">{{ post.title }}</a></h2>
                     <p class="post-meta">
-                        Publish Date: <a class="btn btn-xs btn-info" href="#">{{ post.date_time |date:'Y M d'}}</a> 
-                        Page Views: <a class="btn btn-xs btn-info" href="#">{{ post.page_views}}</a>
-                        Category: <a class="post-category post-category-js" href="{% url 'search_tag' tag=post.category %}">{{ post.category|title }}</a>
+                        Publish Date：<a class="btn btn-xs btn-info"> {{ post.date_time | date:'Y/m/d' }}</a>&nbsp&nbsp
+                        Page Views: <a class="btn btn-xs btn-info">{{ post.page_views}}</a>&nbsp&nbsp
+                        Category：<a class="btn btn-xs btn-info">{{ post.category }}</a>&nbsp&nbsp
+                        Tag: <a class="post-category post-category-js" href="{% url 'search_tag' tag=post.tag %}">{{ post.tag }}</a> 
                     </p>
             </header>
         </section>

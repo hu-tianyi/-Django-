@@ -36,8 +36,9 @@
                             <a class="button-success pure-button" href="{% url 'archives' %}">Archive</a>
                         </li>
                         <li class="nav-item">
-                            <a class="pure-button" href="https://www.github.com/hu-tianyi">Github</a>
+                            <a class="button-success pure-button" href="{% url 'RSS' %}">RSS</a>  
                         </li>
+                        <!--search blog-->
                         <li>
                             <div align="center">
                                 <form class="pure-form" action="/search/" method="get">
@@ -46,13 +47,13 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="button-success pure-button" href="mailto:asktianyi@outlook.com">E-mail</a>
+                            <a class="button-success pure-button" href="{% url 'search_category' category="Life" %}">Life</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="button-success pure-button" href="{% url 'search_category' category="Tech" %}">Tech</a> 
                         </li>
                         <li class="nav-item">
                             <a class="button-success pure-button" href="{% url 'about_me' %}">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="{% url 'RSS' %}">RSS</a>  
                         </li>
                     </ul>
                 </nav>

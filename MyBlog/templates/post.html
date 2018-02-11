@@ -6,16 +6,17 @@
 <div class="posts">
     <section class="content">
         <h1 class="content-subhead">
-            djasdjklad
+            
         </h1>
     </section>
     <section class="post">
         <header class="post-header">
             <h2 class="post-title">{{ post.title }}</h2>
                 <p class="post-meta">
-                    Publish:  <a class="post-author" href="#">{{ post.date_time|date:'Y /m /d'}}</a>&nbsp&nbsp
-                    Page Views: <a class="post-author" href="#">{{ post.page_views}}</a>&nbsp&nbsp
-                    category: <a class="post-category post-category-js" href="{% url 'search_tag' tag=post.category %}">{{ post.category }}</a>
+                    Publish Date：<a class="btn btn-xs btn-info"> {{ post.date_time | date:'Y/m/d' }}</a>&nbsp&nbsp
+                    Page Views: <a class="btn btn-xs btn-info">{{ post.page_views}}</a>&nbsp&nbsp
+                    Category：<a class="btn btn-xs btn-info">{{ post.category }}</a>&nbsp&nbsp
+                    Tag: <a class="post-category post-category-js" href="{% url 'search_tag' tag=post.tag %}">{{ post.tag }}</a> 
                 </p>
         </header>
 

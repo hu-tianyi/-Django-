@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from article import views
 from django.conf import settings
 from django.conf.urls.static import static
-
+from article import views
 urlpatterns = urlpatterns = [
     # Examples:
     # url(r'^$', 'my_blog.views.home', name='home'),
@@ -31,6 +30,7 @@ urlpatterns = urlpatterns = [
     url(r'^archives/$', views.archives, name = 'archives'),
     url(r'^aboutme/$', views.about_me, name = 'about_me'),
     url(r'^tag(?P<tag>\w+)/$', views.search_tag, name = 'search_tag'),
+    url(r'^category(?P<category>\w+)/$', views.search_category, name = 'search_category'),
     url(r'^search/$', views.blog_search, name = 'search'),
     url(r'^feed/$', views.RSSFeed(), name = "RSS"),
 

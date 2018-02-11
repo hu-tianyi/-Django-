@@ -30,7 +30,6 @@ def detail(request, id):
 
 def archives(request) :
     try:
-        post_tags = Article.objects.order_by('category').distinct('category')  
         post_list = Article.objects.all()
     except Article.DoesNotExist :
         raise Http404
@@ -44,10 +43,17 @@ def test(request) :
 
 def search_tag(request, tag) :
     try:
-        post_list = Article.objects.filter(category__iexact = tag) #contains
+        post_list = Article.objects.filter(tag__iexact = tag) #contains
     except Article.DoesNotExist :
         raise Http404
     return render(request, 'tag.html', {'post_list' : post_list})
+
+def search_category(request, category) :
+    try:
+        post_list = Article.objects.filter(category__iexact = category) #contains
+    except Article.DoesNotExist :
+        raise Http404
+    return render(request, 'category.html', {'post_list' : post_list})
 
 def blog_search(request):
     if 's' in request.GET:
