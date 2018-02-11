@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from article import views
+from django.views.generic.base import RedirectView
+
 urlpatterns = urlpatterns = [
     # Examples:
     # url(r'^$', 'my_blog.views.home', name='home'),
@@ -33,6 +35,7 @@ urlpatterns = urlpatterns = [
     url(r'^category(?P<category>\w+)/$', views.search_category, name = 'search_category'),
     url(r'^search/$', views.blog_search, name = 'search'),
     url(r'^feed/$', views.RSSFeed(), name = "RSS"),
+    url(r'^favicon.ico$', RedirectView.as_view(url=r'/static/img/favicon.ico')),       
 
 ]+ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 
